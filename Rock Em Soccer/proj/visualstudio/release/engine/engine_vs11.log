@@ -1,0 +1,36 @@
+﻿Build started 3/19/2015 5:42:36 PM.
+     1>Project "C:\Users\Stephen\Video Game Programming\4210group12\game\proj\visualstudio\engine\engine_vs11.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "..\release\engine\engine.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _MBCS /Gm- /EHsc /MD /GS- /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Fo"..\release\engine\\" /Fd"..\release\engine\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\engine\windows\windows_controller.c ..\..\..\engine\windows\windows_keyboard.c ..\..\..\engine\windows\windows_sound.c
+         windows_controller.c
+         windows_keyboard.c
+         windows_sound.c
+         All outputs are up-to-date.
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\lib\engine.lib" xinput.lib /NOLOGO /LTCG ..\release\engine\bits.obj
+         ..\release\engine\direct3d_light.obj
+         ..\release\engine\direct3d_mesh.obj
+         ..\release\engine\direct3d_sprite.obj
+         ..\release\engine\input.obj
+         ..\release\engine\memory.obj
+         ..\release\engine\memory_mediumpage.obj
+         ..\release\engine\memory_smallpage.obj
+         ..\release\engine\windows_controller.obj
+         ..\release\engine\windows_debug.obj
+         ..\release\engine\windows_graphics.obj
+         ..\release\engine\windows_keyboard.obj
+         ..\release\engine\windows_memory.obj
+         ..\release\engine\windows_platform.obj
+         ..\release\engine\windows_sound.obj
+         ..\release\engine\windows_time.obj
+         engine_vs11.vcxproj -> C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\lib\engine.lib
+       FinalizeBuildStatus:
+         Deleting file "..\release\engine\engine.unsuccessfulbuild".
+         Touching "..\release\engine\engine.lastbuildstate".
+     1>Done Building Project "C:\Users\Stephen\Video Game Programming\4210group12\game\proj\visualstudio\engine\engine_vs11.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.94

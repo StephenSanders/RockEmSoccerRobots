@@ -1,0 +1,51 @@
+﻿Build started 6/3/2014 12:59:05 AM.
+     1>Project "C:\Users\Stephen\Video Game Programming\4210group12\game\proj\visualstudio\engine\engine_vs11.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "..\debug\engine\engine.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /MDd /GS- /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Fo"..\debug\engine\\" /Fd"..\debug\engine\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\engine\bits.c ..\..\..\engine\input.c ..\..\..\engine\memory.c ..\..\..\engine\memory\memory_mediumpage.c ..\..\..\engine\memory\memory_smallpage.c ..\..\..\engine\windows\windows_controller.c ..\..\..\engine\windows\windows_debug.c ..\..\..\engine\windows\windows_keyboard.c ..\..\..\engine\windows\windows_platform.c ..\..\..\engine\windows\windows_sound.c ..\..\..\engine\windows\windows_time.c
+         windows_time.c
+         windows_sound.c
+         windows_platform.c
+         windows_keyboard.c
+         windows_debug.c
+         windows_controller.c
+         memory_smallpage.c
+         memory_mediumpage.c
+         memory.c
+         input.c
+         bits.c
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /MDd /GS- /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Fo"..\debug\engine\\" /Fd"..\debug\engine\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\engine\direct3d\direct3d_light.cpp ..\..\..\engine\direct3d\direct3d_mesh.cpp ..\..\..\engine\direct3d\direct3d_sprite.cpp ..\..\..\engine\windows\windows_graphics.cpp ..\..\..\engine\windows\windows_memory.cpp
+         windows_memory.cpp
+         windows_graphics.cpp
+         direct3d_sprite.cpp
+         direct3d_mesh.cpp
+         direct3d_light.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\lib\engined.lib" xinput.lib /NOLOGO ..\debug\engine\bits.obj
+         ..\debug\engine\direct3d_light.obj
+         ..\debug\engine\direct3d_mesh.obj
+         ..\debug\engine\direct3d_sprite.obj
+         ..\debug\engine\input.obj
+         ..\debug\engine\memory.obj
+         ..\debug\engine\memory_mediumpage.obj
+         ..\debug\engine\memory_smallpage.obj
+         ..\debug\engine\windows_controller.obj
+         ..\debug\engine\windows_debug.obj
+         ..\debug\engine\windows_graphics.obj
+         ..\debug\engine\windows_keyboard.obj
+         ..\debug\engine\windows_memory.obj
+         ..\debug\engine\windows_platform.obj
+         ..\debug\engine\windows_sound.obj
+         ..\debug\engine\windows_time.obj
+         engine_vs11.vcxproj -> C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\lib\engined.lib
+       FinalizeBuildStatus:
+         Deleting file "..\debug\engine\engine.unsuccessfulbuild".
+         Touching "..\debug\engine\engine.lastbuildstate".
+     1>Done Building Project "C:\Users\Stephen\Video Game Programming\4210group12\game\proj\visualstudio\engine\engine_vs11.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.36

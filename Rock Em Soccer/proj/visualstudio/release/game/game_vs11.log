@@ -1,0 +1,48 @@
+﻿Build started 3/19/2015 8:48:32 PM.
+     1>Project "C:\Users\Stephen\Video Game Programming\4210group12\game\proj\visualstudio\game\game_vs11.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "..\release\game\game.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /Gm- /EHsc /MD /GS- /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Fo"..\release\game\\" /Fd"..\release\game\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\src\Scenes\BallEntity.cpp ..\..\..\src\Scenes\MenuScene.cpp ..\..\..\src\Scenes\PongScene.cpp ..\..\..\src\Scenes\RacketEntity.cpp
+         BallEntity.cpp
+     1>..\..\..\src\Scenes\BallEntity.cpp(118): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         MenuScene.cpp
+     1>..\..\..\src\Scenes\MenuScene.cpp(271): warning C4244: 'initializing' : conversion from 'float' to 'DWORD', possible loss of data
+         PongScene.cpp
+     1>..\..\..\src\Scenes\PongScene.cpp(415): warning C4244: 'initializing' : conversion from 'float' to 'DWORD', possible loss of data
+     1>..\..\..\src\Scenes\PongScene.cpp(459): warning C4244: 'initializing' : conversion from 'float' to 'DWORD', possible loss of data
+     1>..\..\..\src\Scenes\PongScene.cpp(539): warning C4244: 'initializing' : conversion from 'float' to 'DWORD', possible loss of data
+         RacketEntity.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\bin\game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Jake\Desktop\game\lib user32.lib d3d9.lib dxguid.lib dsound.lib winmm.lib murmurhash.lib tinyxml2.lib xanimator.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\bin\game.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\bin\game.lib" /MACHINE:X86 /SAFESEH ..\release\game\Camera.obj
+         ..\release\game\Entity.obj
+         ..\release\game\Game.obj
+         ..\release\game\Model.obj
+         ..\release\game\Resource.obj
+         ..\release\game\Scene.obj
+         ..\release\game\Settings.obj
+         ..\release\game\Transform.obj
+         ..\release\game\main.obj
+         ..\release\game\BallEntity.obj
+         ..\release\game\MenuScene.obj
+         ..\release\game\PongScene.obj
+         ..\release\game\RacketEntity.obj
+         "C:\Users\Stephen\Video Game Programming\4210group12\game\lib\engine.lib"
+         Generating code
+         Finished generating code
+     1>xanimator.lib(XAnimator.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'xanimator.lib(XAnimator.obj)' or at 'C:\Users\Stephen\Video Game Programming\4210group12\game\bin\vc110.pdb'; linking object as if no debug info
+     1>xanimator.lib(stdafx.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'xanimator.lib(stdafx.obj)' or at 'C:\Users\Stephen\Video Game Programming\4210group12\game\bin\vc110.pdb'; linking object as if no debug info
+     1>xanimator.lib(Utility.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'xanimator.lib(Utility.obj)' or at 'C:\Users\Stephen\Video Game Programming\4210group12\game\bin\vc110.pdb'; linking object as if no debug info
+     1>xanimator.lib(MeshManager.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'xanimator.lib(MeshManager.obj)' or at 'C:\Users\Stephen\Video Game Programming\4210group12\game\bin\vc110.pdb'; linking object as if no debug info
+     1>xanimator.lib(GfxModelAnim.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'xanimator.lib(GfxModelAnim.obj)' or at 'C:\Users\Stephen\Video Game Programming\4210group12\game\bin\vc110.pdb'; linking object as if no debug info
+     1>xanimator.lib(MeshHierarchy.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'xanimator.lib(MeshHierarchy.obj)' or at 'C:\Users\Stephen\Video Game Programming\4210group12\game\bin\vc110.pdb'; linking object as if no debug info
+     1>xanimator.lib(XFileManualSaving.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'xanimator.lib(XFileManualSaving.obj)' or at 'C:\Users\Stephen\Video Game Programming\4210group12\game\bin\vc110.pdb'; linking object as if no debug info
+         game_vs11.vcxproj -> C:\Users\Stephen\Video Game Programming\4210group12\game\proj\..\bin\game.exe
+       FinalizeBuildStatus:
+         Deleting file "..\release\game\game.unsuccessfulbuild".
+         Touching "..\release\game\game.lastbuildstate".
+     1>Done Building Project "C:\Users\Stephen\Video Game Programming\4210group12\game\proj\visualstudio\game\game_vs11.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:18.92

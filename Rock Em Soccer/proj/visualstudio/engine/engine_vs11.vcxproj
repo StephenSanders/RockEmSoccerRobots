@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\engine\bits.c" />
+    <ClCompile Include="..\..\..\engine\direct3d\direct3d_light.cpp" />
+    <ClCompile Include="..\..\..\engine\direct3d\direct3d_mesh.cpp" />
+    <ClCompile Include="..\..\..\engine\direct3d\direct3d_sprite.cpp" />
+    <ClCompile Include="..\..\..\engine\input.c" />
+    <ClCompile Include="..\..\..\engine\memory.c" />
+    <ClCompile Include="..\..\..\engine\memory\memory_mediumpage.c" />
+    <ClCompile Include="..\..\..\engine\memory\memory_smallpage.c" />
+    <ClCompile Include="..\..\..\engine\windows\windows_controller.c" />
+    <ClCompile Include="..\..\..\engine\windows\windows_debug.c" />
+    <ClCompile Include="..\..\..\engine\windows\windows_graphics.cpp" />
+    <ClCompile Include="..\..\..\engine\windows\windows_keyboard.c" />
+    <ClCompile Include="..\..\..\engine\windows\windows_memory.cpp" />
+    <ClCompile Include="..\..\..\engine\windows\windows_platform.c" />
+    <ClCompile Include="..\..\..\engine\windows\windows_sound.c" />
+    <ClCompile Include="..\..\..\engine\windows\windows_time.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\engine\memory\memory_mediumpage.h" />
+    <ClInclude Include="..\..\..\engine\memory\memory_osapi.h" />
+    <ClInclude Include="..\..\..\engine\memory\memory_smallpage.h" />
+    <ClInclude Include="..\..\..\include\engine\bits.h" />
+    <ClInclude Include="..\..\..\include\engine\controller.h" />
+    <ClInclude Include="..\..\..\include\engine\debug.h" />
+    <ClInclude Include="..\..\..\include\engine\define.h" />
+    <ClInclude Include="..\..\..\include\engine\engine.h" />
+    <ClInclude Include="..\..\..\include\engine\graphics.h" />
+    <ClInclude Include="..\..\..\include\engine\graphics\light.h" />
+    <ClInclude Include="..\..\..\include\engine\graphics\mesh.h" />
+    <ClInclude Include="..\..\..\include\engine\graphics\sprite.h" />
+    <ClInclude Include="..\..\..\include\engine\input.h" />
+    <ClInclude Include="..\..\..\include\engine\keyboard.h" />
+    <ClInclude Include="..\..\..\include\engine\memory.h" />
+    <ClInclude Include="..\..\..\include\engine\platform.h" />
+    <ClInclude Include="..\..\..\include\engine\sound.h" />
+    <ClInclude Include="..\..\..\include\engine\time.h" />
+    <ClInclude Include="..\..\..\include\engine\types.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98E4D3A7-A657-4E94-BFD7-83671358CBD6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>engine_vs11</RootNamespace>
+    <ProjectName>engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <IncludePath>$(DXSDK_DIR)Include;$(SolutionDir)..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(SolutionDir)..\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\lib\</OutDir>
+    <IntDir>..\$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <IntDir>..\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\lib\</OutDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(SolutionDir)..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(SolutionDir)..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>xinput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>xinput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "visualstudio\game\game_vs11.vcxproj", "{FDC19027-FF1C-478F-8E3C-CA9DC8FD57D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "engine", "visualstudio\engine\engine_vs11.vcxproj", "{98E4D3A7-A657-4E94-BFD7-83671358CBD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|win32 = debug|win32
+		release|win32 = release|win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDC19027-FF1C-478F-8E3C-CA9DC8FD57D0}.debug|win32.ActiveCfg = debug|Win32
+		{FDC19027-FF1C-478F-8E3C-CA9DC8FD57D0}.debug|win32.Build.0 = debug|Win32
+		{FDC19027-FF1C-478F-8E3C-CA9DC8FD57D0}.release|win32.ActiveCfg = release|Win32
+		{FDC19027-FF1C-478F-8E3C-CA9DC8FD57D0}.release|win32.Build.0 = release|Win32
+		{98E4D3A7-A657-4E94-BFD7-83671358CBD6}.debug|win32.ActiveCfg = debug|Win32
+		{98E4D3A7-A657-4E94-BFD7-83671358CBD6}.debug|win32.Build.0 = debug|Win32
+		{98E4D3A7-A657-4E94-BFD7-83671358CBD6}.release|win32.ActiveCfg = release|Win32
+		{98E4D3A7-A657-4E94-BFD7-83671358CBD6}.release|win32.Build.0 = release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
